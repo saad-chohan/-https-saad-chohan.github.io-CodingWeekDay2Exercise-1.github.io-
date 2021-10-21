@@ -7,6 +7,37 @@
     <title>Document</title>
 </head>
 <body>
-    <h1>CodingWeekDay2Exercise-1</h1>
+    <h3>12. Write a JavaScript program to check whether a given Number is within 20 of 100 or 400.</h3>
+    <br>
+
+    <h1 id="answer"></h1>
+    <!-- <h3>Answer</h3> -->
+
+
 </body>
+<script>
+    var x = prompt("Enter Number")
+
+
+
+function test(x) {
+  return ((Math.abs(100 - x) <= 20) ||
+	 (Math.abs(400 - x) <= 20));
+}
+var answer= ("Answer: "+test(x))
+//console.log(answer)
+document.getElementById("answer").innerText = answer
+
+
+
+
+
+
+
+
+
+
+
+
+</script>
 </html>
